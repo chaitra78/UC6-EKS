@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "s3" { #backend info should always be in terraform block
-    bucket         = "remotestate11"
+    bucket         = "my-s3-bucket-name-cr"
     key            = "expense_web_ALB_module/terraform.tfstate"
     region         = "us-east-1" # region of bucket and dynamodb
     dynamodb_table = "raghu"     #partition key should always be LockID --> case sensitive
