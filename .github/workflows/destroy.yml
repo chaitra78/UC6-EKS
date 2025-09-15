@@ -9,12 +9,12 @@ on:
         default: 'dev'
 
 jobs:
-  # alb:
-  #   runs-on: ubuntu-latest
-  #   name: "alb - destroy"
-  #   defaults:
-  #     run:
-  #       working-directory: ./alb/
+  alb:
+    runs-on: ubuntu-latest
+    name: "alb - destroy"
+    defaults:
+      run:
+        working-directory: ./alb/
     
 #When using aws-actions/configure-aws-credentials with OIDC, you must give 
 #the job permission to request an OIDC ID token from GitHub
