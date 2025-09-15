@@ -9,8 +9,8 @@ terraform {
     bucket         = "my-s3-bucket-name-cr"
     key            = "eks/terraform.tfstate"
     region         = "us-east-1" # region of bucket and dynamodb
-    use_lockfile = true     #s3 by default supports locking but to be explicit
-    encrypt       = true
+   # use_lockfile = true     #s3 by default supports locking but to be explicit
+   # encrypt       = true
     }
 }
 
