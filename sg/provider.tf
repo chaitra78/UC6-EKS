@@ -5,11 +5,11 @@ terraform {
       version = "5.84.0"        #version of provider
     }
   }
+
   backend "s3" { #backend info should always be in terraform block
     bucket         = "my-s3-bucket-name-cr"
     key            = "expense_k8_sg_module/terraform.tfstate"
-    region         = "us-east-1" # region of bucket and dynamodb
-  # dynamodb_table = "chaitra"     #partition key should always be LockID --> case sensitive
+    region         = "us-east-1"   # region of bucket and dynamodb
   }
 }
 
