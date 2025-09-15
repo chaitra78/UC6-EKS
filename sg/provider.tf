@@ -9,7 +9,7 @@ terraform {
     bucket         = "my-s3-bucket-name-cr"
     key            = "expense_k8_sg_module/terraform.tfstate"
     region         = "us-east-1" # region of bucket and dynamodb
-    dynamodb_table = "chaitra"     #partition key should always be LockID --> case sensitive
+    # dynamodb_table = "chaitra"     #partition key should always be LockID --> case sensitive
   }
 }
 
